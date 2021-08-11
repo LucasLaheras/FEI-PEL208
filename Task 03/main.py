@@ -44,10 +44,10 @@ def kmeans(data, k):
 
         for i in range(k):
             points = np.asarray([data[j] for j in range(len(data)) if clusters[j] == i])
-            if (len(points) > 0):
+            if len(points) > 0:
                 C[i] = grand_mean(points.T)
 
-        if (data.shape[1] == 2):
+        if data.shape[1] == 2:
             plot.plotClusters(data, clusters, C)
 
         error = sum(dist(C, olderC, 2))

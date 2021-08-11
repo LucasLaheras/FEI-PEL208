@@ -1,9 +1,6 @@
-import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
 
-# método para plotar os clusters e seus centroides
 def plotClusters(data, clusters, centroids):
     plt.rcParams['figure.figsize'] = (10, 6)
     plt.style.use('ggplot')
