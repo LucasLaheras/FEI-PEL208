@@ -5,6 +5,7 @@ class LinearRegression:
     def __init__(self, x, y):
         """
         :param x: data input matrix
+        :param y: data output matrix
         """
 
         self.x = copy.deepcopy(x)

@@ -12,9 +12,9 @@ from matrix import *
 import numpy as np
 
 
-FILE_DATA_CENSUS = 'Task 01/data_task01/US-Census.csv'
-FILE_DATA_BOOKS = 'Task 01/data_task01/Books_attend_grade.csv'
-FILE_DATA_ALPSWATER = 'Task 01/data_task01/alpswater.csv'
+FILE_DATA_CENSUS = 'data_task01/US-Census.csv'
+FILE_DATA_BOOKS = 'data_task01/Books_attend_grade.csv'
+FILE_DATA_ALPSWATER = 'data_task01/alpswater.csv'
 
 
 if __name__ == '__main__':
@@ -76,11 +76,9 @@ if __name__ == '__main__':
     ans = lin_re.linear_least_squares()
     print(ans)
 
-    # a = np.arange(194, 213, 0.1)
     ax = plt.axes(projection='3d')
     j = transpose(x)
     ax.scatter3D(j[0], j[1], y)
-    # plt.plot(a, a * ans[1][0] + ans[0][0], 'g')
     plt.show()
 
 
